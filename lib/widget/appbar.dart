@@ -12,6 +12,7 @@ class _MainAppBarState extends State<MainAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar( 
+      automaticallyImplyLeading: false,
       title: const Text('Lezz App'),
       backgroundColor: Theme.of(context).primaryColor,);
   }
