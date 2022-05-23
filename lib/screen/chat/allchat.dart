@@ -28,17 +28,29 @@ class _AllChatState extends State<AllChat> {
                   });
                   popUp(tags,img);
                 },
-                child: const Padding(
-                  padding: EdgeInsets.only(
+                child:  Padding(
+                  padding: const EdgeInsets.only(
                       left: 15.0, right: 15, top: 10, bottom: 10),
-                  child: Hero(
-                    tag: 'k',
-                    child: CircleAvatar(
-                      backgroundColor: Colors.transparent,
-                      radius: 25,
-                      foregroundImage: NetworkImage(
-                          'https://chi-e.com/wp-content/uploads/2018/07/gabibbo.jpg'),
+                  child: Stack(
+                  children:const [
+                    Hero(
+                      tag: 'k',
+                      child: CircleAvatar(
+                        backgroundColor: Colors.transparent,
+                        radius: 25,
+                        foregroundImage: NetworkImage(
+                            'https://chi-e.com/wp-content/uploads/2018/07/gabibbo.jpg'),
+                      ),
                     ),
+
+                    CircleAvatar(
+                        backgroundColor: Colors.transparent,
+                        radius: 25,
+                        foregroundImage: NetworkImage(
+                            'https://chi-e.com/wp-content/uploads/2018/07/gabibbo.jpg'),
+                      ),
+
+                  ],
                   ),
                 ),
               ),
@@ -76,17 +88,29 @@ class _AllChatState extends State<AllChat> {
                   });
                   popUp(tags,img);
                 },
-                child: const Padding(
-                  padding: EdgeInsets.only(
+                child: Padding(
+                  padding: const EdgeInsets.only(
                       left: 15.0, right: 15, top: 10, bottom: 10),
-                  child: Hero(
-                    tag: 'm',
-                    child: CircleAvatar(
-                      backgroundColor: Colors.transparent,
-                      radius: 25,
-                      foregroundImage: NetworkImage(
-                          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT94BsaNH9OSdUE2TZrGtdhms9iqoZeaFXFwQ&usqp=CAU'),
+                  child: Stack(
+                  children:const[
+                    Hero(
+                      tag: 'm',
+                      child: CircleAvatar(
+                        backgroundColor: Colors.transparent,
+                        radius: 25,
+                        foregroundImage: NetworkImage(
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT94BsaNH9OSdUE2TZrGtdhms9iqoZeaFXFwQ&usqp=CAU'),
+                      ),
                     ),
+
+                    CircleAvatar(
+                        backgroundColor: Colors.transparent,
+                        radius: 25,
+                        foregroundImage: NetworkImage(
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT94BsaNH9OSdUE2TZrGtdhms9iqoZeaFXFwQ&usqp=CAU'),
+                      ),
+
+                  ],
                   ),
                 ),
               ),
@@ -122,6 +146,7 @@ class _AllChatState extends State<AllChat> {
         barrierDismissible: true,
         pageBuilder: (BuildContext context, _, __) {
           return Hero(
+            
             tag: tags,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

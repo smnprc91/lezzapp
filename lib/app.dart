@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lezzapp/screen/homepage/homepage.dart';
 
 import 'package:lezzapp/screen/login/logscreen.dart';
 
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
      
       primaryColor: const Color(0xff075e54)
       ),
-      home: const LogIn()
+      home: const HomePage()
     );
   }
 }
